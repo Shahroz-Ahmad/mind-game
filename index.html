@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mind game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.js">
+</head>
+
+<body>
+    <div class="container">
+        <section class="mainWork">
+            <p>DICE - GAME</p>
+            <div>
+                <input type="text" placeholder="1st PLAYER" id="FIRST">
+                <input type="text" placeholder="2nd PLAYER" id="SECOND">
+            </div>
+            <button onclick="playGame()">PLAY</button>
+
+            <section class="game">
+                <div>
+                    <h2>PLAYER-1</h2>
+                    <img src="./dice1.png" alt="" id="dice1">
+                </div>
+                <h1 class="heading"></h1>
+                <div>
+                    <h2>PLAYER-2</h2>
+                    <img src="./dice1.png" alt="" id="dice2">
+                </div>
+            </section>
+        </section>
+        <section class="tableWork">
+            <table>
+                <tr>
+                    <th>Index</th>
+                    <th>Player1</th>
+                    <th>Player2</th>
+                    <th>Winner</th>
+                </tr>
+            </table>
+        </section>
+        <script src="./style.js"></script>
+    </div>
+</body>
+
+</html>
