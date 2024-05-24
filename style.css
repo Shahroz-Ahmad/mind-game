@@ -13,12 +13,13 @@ body {
     background-position: center;
     height: 100vh;
     display: flex;
+    width: 100vw;
 }
 
 #dice1,
 #dice2 {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     border-radius: 20%;
     border: 2px solid rgb(227, 224, 201);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -44,7 +45,7 @@ body {
 input {
     height: 7vh;
     width: 15vw;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: rgb(44, 40, 54);
     color: rgb(244, 135, 43);
     padding: 0 2rem;
@@ -57,7 +58,7 @@ input {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 5rem;
+    row-gap: 1rem;
 }
 .tableWork{
     width: 50%;
@@ -65,7 +66,7 @@ input {
 p{
     color: rgb(227, 224, 201);
     background-color: rgb(244, 135, 43);
-    font-size: 5rem;
+    font-size: 3rem;
     padding: 0 3rem;
     font-weight: 900;
 }
@@ -84,16 +85,15 @@ button:hover{
 
 .game {
     display: flex;
-    gap: 5rem;
+    gap: 0.5rem;
 }
 
 h2 {
-    font-size: 2rem;
-    text-align: center;
+    font-size: 1rem;
     color: white;
     background-color: rgb(44, 40, 54);
     margin-bottom: 2rem;
-    padding: 1rem  ;
+    padding: 1rem 3rem  ;
     border: 2px dotted rgb(227, 224, 201);
 }
 
@@ -103,7 +103,7 @@ h1 {
     width: 20vw;
     height: 10vh;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     border-radius: 8%;
     font-weight: 900;
 }
@@ -135,6 +135,114 @@ tr:nth-child(even) {
     background-color: #ffb3b3;
 }
 
+@media screen and (max-width: 768px) {
+    .container {
+        height: auto;
+        width: 100%; /* Adjust width as needed */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainWork{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 1rem;
+    }
+    p{
+        color: rgb(227, 224, 201);
+        background-color: rgb(244, 135, 43);
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .game{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    #dice1,
+#dice2 {
+    height: 50px;
+    width: 50px;
+    border-radius: 20%;
+    border: 2px solid rgb(227, 224, 201);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+h2 {
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    background-color: rgb(44, 40, 54);
+    margin-bottom: 2rem;
+    padding: 1rem  ;
+    border: 2px dotted rgb(227, 224, 201);
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    background-color: rgba(44, 40, 54, 0.787);
+    color: rgb(227, 224, 201);
+    margin: 1rem auto ;
+    border: 3px dotted rgb(227, 224, 201);
+}
+
+td,
+th {
+    border: 1px dotted rgb(227, 224, 201);
+    text-align: left;
+    padding: 0.5rem 0.2rem;
+}
+
+tr:nth-child(even) {
+    background-color: #ffb3b3;
+}
+.tableWork{
+    width: 100%;
+}
+.inps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    height: 5vh;
+    width: 50%;
+    font-size: 1rem;
+    background-color: rgb(44, 40, 54);
+    color: rgb(244, 135, 43);
+    padding: 0 2rem;
+    outline: none;
+    border: 2px dotted rgb(227, 224, 201);
+}
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    background-color: rgb(227, 224, 201);
+    font-weight: 700;
+}
+button:hover{
+    background-color: rgb(244, 135, 43);
+    cursor: pointer;
+}
+h1 {
+    color: rgb(44, 40, 54);
+    background-color: rgba(227, 224, 201, 0.51);
+    width: 90%;
+    height: 8vh;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 8%;
+    font-weight: 900;
+}
+}
 /* function showdata() {
     tablee.innerHTML = `<tr>
     <th>Index</th>
